@@ -1,0 +1,47 @@
+/* Query1 - query used for first insight /
+
+SELECT c.CustomerID, c.FirstName, c.LastName, SUM(i.total) total_spent 
+FROM Customer c
+JOIN Invoice i
+ON c.Customerid = i.CustomerId
+GROUP BY c.CustomerID, c.FirstName, c.LastName
+ORDER BY total_spent DESC
+LIMIT 10;
+
+/* Query2 - query used for second insight/
+
+SELECT c.CustomerId, c.FirstName, c.LastName, COUNT(*) number_of_orders
+FROM Customer c
+JOIN Invoice i
+ON c.CustomerId = i.CustomerId
+GROUP BY c.CustomerId, c.FirstName, c.LastName
+HAVING COUNT(*) > 5
+ORDER BY number_of_orders
+LIMIT 10;
+
+/*Query3 - query used for third insight/
+
+SELECT t.Name, COUNT(*) AS num_purchases
+FROM Track t
+JOIN Genre g
+ON t.GenreId = g.GenreId
+GROUP BY t.GenreId
+ORDER BY num_purchases DESC
+LIMIT 5;
+
+/*Query4 - query used for fourth insight/
+
+*Modeled with insight from https://github.com/douglasnavarro/chinook-analysis and https://m-soro.github.io/Business-Analytics/SQL-for-Data-Analysis/L4-Project-Query-Music-Store/
+
+SELECT r.Name, COUNT(*)
+FROM Genre g
+JOIN Track t
+ON g.GenreId = t.GenreId
+JOIN Album a
+ON t.AlbumId = a.AlbumId
+JOIN Artist r
+ON a.ArtistId = r.ArtistId
+WHERE g.Name = 'Rock'
+GROUP BY r.Name
+ORDER BY 2 DESC
+LIMIT 5;
