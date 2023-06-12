@@ -14,4 +14,5 @@ Each query used had to satisfy the following criteria:
 * at least four unique SQL queries
 
 ### Final Presentation
-You can view my presentation [here](https://github.com/storiesbymai/Music-SQL-Database/blob/main/Maya_Caldwell_BAND_project3.zip).
+You can check out my presentation [here](https://github.com/storiesbymai/Music-SQL-Database/blob/main/MC_BAND_p3.pdf) and queries [here](https://github.com/storiesbymai/Music-SQL-Database/blob/main/p3.txt). Thank you to @douglasnavarro & @m-soro for helping to get the creative juices going!
+See my lovely reviewer's note [here](https://github.com/storiesbymai/Music-SQL-Database/blob/main/Reviewer%20Note.png):grin:
