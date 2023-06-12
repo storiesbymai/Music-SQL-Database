@@ -14,4 +14,4 @@ Each query used had to satisfy the following criteria:
 * at least four unique SQL queries
 
 ### Final Presentation
-You can view my presentation [here].(https://github.com/storiesbymai/Music-SQL-Database/blob/main/Maya_Caldwell_BAND_project3.zip)
+You can view my presentation [here](https://github.com/storiesbymai/Music-SQL-Database/blob/main/Maya_Caldwell_BAND_project3.zip).
